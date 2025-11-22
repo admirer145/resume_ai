@@ -16,7 +16,7 @@ async def analyze_resume(
     try:
         resp = await analyze_resume_main(resume, jd_text)
     except Exception as e:
-        logger.error(f"Error analyzing resume: {str(e)}")
+        logger.exception(f"Error analyzing resume: {str(e)}")
         return {"error": str(e)}
     return resp
 

@@ -22,7 +22,7 @@ function ResumeAnalyzer() {
 
     try {
       const response = await axios.post(
-        'http://localhost:8000/api/analyze',
+        'http://localhost:8000/api/resume/analyze',
         formData,
         {
           headers: { 'Content-Type': 'multipart/form-data' }
